@@ -72,6 +72,22 @@ final class Rate
     }
 
     /**
+     * @return int
+     */
+    public function getTokens()
+    {
+        return $this->tokens;
+    }
+
+    /**
+     * @return string
+     */
+    public function getUnit()
+    {
+        return $this->unit;
+    }
+
+    /**
      * Returns the rate in Tokens per second.
      *
      * @return double The rate.
