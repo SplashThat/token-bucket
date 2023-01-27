@@ -49,6 +49,15 @@ class TokenConverterTest extends \PHPUnit_Framework_TestCase
             [1000, 1, new Rate(1, Rate::MILLISECOND)],
             [2000, 2, new Rate(1, Rate::MILLISECOND)],
 
+            [0, 9, new Rate(1, Rate::TEN_SECONDS)],
+            [1, 10, new Rate(1, Rate::TEN_SECONDS)],
+            [1, 11, new Rate(1, Rate::TEN_SECONDS)],
+
+            [0, 19, new Rate(1, Rate::TWENTY_SECONDS)],
+            [1, 20, new Rate(1, Rate::TWENTY_SECONDS)],
+            [1, 21, new Rate(1, Rate::TWENTY_SECONDS)],
+
+
             [0, 59, new Rate(1, Rate::MINUTE)],
             [1, 60, new Rate(1, Rate::MINUTE)],
             [1, 61, new Rate(1, Rate::MINUTE)],
@@ -83,6 +92,11 @@ class TokenConverterTest extends \PHPUnit_Framework_TestCase
             [0.002, 2, new Rate(1, Rate::MILLISECOND)],
             [1, 1, new Rate(1, Rate::SECOND)],
             [2, 2, new Rate(1, Rate::SECOND)],
+            [10, 1, new Rate(1, Rate::TEN_SECONDS)],
+            [20, 2, new Rate(1, Rate::TEN_SECONDS)],
+            [20, 1, new Rate(1, Rate::TWENTY_SECONDS)],
+            [40, 2, new Rate(1, Rate::TWENTY_SECONDS)],
+
         ];
     }
     
