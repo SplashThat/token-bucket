@@ -1,5 +1,5 @@
 # Token Bucket
-![Build Status](https://app.codeship.com/projects/9ce04247-bd73-419a-8874-129c472ba004/status?branch=main)
+<a href="https://app.codeship.com/projects/9ce04247-bd73-419a-8874-129c472ba004">![Build Status](https://app.codeship.com/projects/9ce04247-bd73-419a-8874-129c472ba004/status?branch=main)</a>
 
 A Splash fork of the [Token Bucket](https://github.com/bandwidth-throttle/token-bucket) PHP repo with the following added features:
 * 10s and 20s rate intervals
