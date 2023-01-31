@@ -15,6 +15,8 @@ final class Rate
     const MICROSECOND = "microsecond";
     const MILLISECOND = "millisecond";
     const SECOND = "second";
+    const TEN_SECONDS = "ten_seconds";
+    const TWENTY_SECONDS = "twenty_seconds";
     const MINUTE = "minute";
     const HOUR   = "hour";
     const DAY    = "day";
@@ -26,15 +28,17 @@ final class Rate
      * @var double[] Mapping between units and seconds
      */
     private static $unitMap = [
-        self::MICROSECOND =>        0.000001,
-        self::MILLISECOND =>        0.001,
-        self::SECOND      =>        1,
-        self::MINUTE      =>       60,
-        self::HOUR        =>     3600,
-        self::DAY         =>    86400,
-        self::WEEK        =>   604800,
-        self::MONTH       =>  2629743.83,
-        self::YEAR        => 31556926,
+        self::MICROSECOND    =>        0.000001,
+        self::MILLISECOND    =>        0.001,
+        self::SECOND         =>        1,
+        self::TEN_SECONDS    =>       10,
+        self::TWENTY_SECONDS =>       20,
+        self::MINUTE         =>       60,
+        self::HOUR           =>     3600,
+        self::DAY            =>    86400,
+        self::WEEK           =>   604800,
+        self::MONTH          =>  2629743.83,
+        self::YEAR           => 31556926,
     ];
     
     /**
@@ -65,6 +69,22 @@ final class Rate
         }
         $this->tokens = $tokens;
         $this->unit   = $unit;
+    }
+
+    /**
+     * @return int
+     */
+    public function getTokens()
+    {
+        return $this->tokens;
+    }
+
+    /**
+     * @return string
+     */
+    public function getUnit()
+    {
+        return $this->unit;
     }
 
     /**
