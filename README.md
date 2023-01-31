@@ -1,4 +1,8 @@
 # Token Bucket
+![Build Status](https://app.codeship.com/projects/9ce04247-bd73-419a-8874-129c472ba004/status?branch=main)
+
+A Splash fork of the [Token Bucket](https://github.com/bandwidth-throttle/token-bucket) PHP repo with the following added features:
+* 10s and 20s rate intervals
 
 This is a threadsafe implementation of the [Token Bucket algorithm](https://en.wikipedia.org/wiki/Token_bucket)
 in PHP. You can use a token bucket to limit an usage rate for a resource 
@@ -150,5 +154,3 @@ Responsible for this project is Markus Malkusch markus@malkusch.de.
 
 If you like this project and feel generous donate a few Bitcoins here:
 [1335STSwu9hST4vcMRppEPgENMHD2r1REK](bitcoin:1335STSwu9hST4vcMRppEPgENMHD2r1REK)
-
-[![Build Status](https://travis-ci.org/bandwidth-throttle/token-bucket.svg?branch=master)](https://travis-ci.org/bandwidth-throttle/token-bucket)
